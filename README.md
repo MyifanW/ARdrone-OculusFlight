@@ -7,15 +7,28 @@ This is a plugin that allows you to control your ARdrone with a Oculus Rift. Thi
 
 Heavily referenced Oculus-drone by Diego Araos.
 
-I've borrowed his instructions as well.
-0.replace pilot and video-stream folders in your plugin folder with mine. You can use my HUD folder too, which is slightly better for oculus use.
-I don't know how to rename them, and I no longer have access to a drone so I can't test, so this is finished until I someday buy one. 
-1. npm install
-2. bower install
-3. coffee -wc -o . .
-4. Download and run oculus-rest server (https://github.com/possan/oculus-rest)
+Requirements:
+1- Node.js 
+2- Ardone-webflight https://github.com/eschnou/ardrone-webflight
+3- Oculus rift 
+
+Instruction:
+0. Install ardone-webflight 
+1. copy the content of this plugin folder to ardone-webflight's plugin folder
+2. open config.js in ardone-webflight, 
+comment out video-stream, HUD and pilot, and then add:
+"video-stream-oculus" // Display the video stream suitable for oculus rift stream
+, "pilot-oculus"  // Pilot the drone using the oculus
+, "hud-oculus" // HUD more suitable for oculus view - recommend to turn it off- 
+* You can switch between oculus view and non oculus view by simply commenting out the plugin name 
+
+3. set your oculus to extended desktop mode, 
+4. Go to http://localhost:3000/ , to put your browser on the oculus screen, make sure it is horizonally correct, press f11 on your browser to enjoy an oculus view of drone's camera. 
+ 
+
+To enable head movements: 
+4. Download and run oculus-rest server (https://github.com/possan/oculus-rest) -there are better oculus servers out there, especially on windows ;)-
 5. node .
-6. Go to your browser http://localhost:3000/
 Controls are the same as the pilot plugin, only controls are overwritten by headmotions. 
 Taking off, landing, rising and falling are the same as the pilot commands.
 
