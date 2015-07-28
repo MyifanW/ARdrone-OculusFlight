@@ -5,9 +5,10 @@ A plugin to AR-Webflight that allows you to view and control the quadcopter with
 
 Requirements:
 
-1- Node.js 
-2- Ardone-webflight https://github.com/eschnou/ardrone-webflight
-3- Oculus rift 
+1. Node.js
+2. Ardone-webflight https://github.com/eschnou/ardrone-webflight
+3. Oculus rift, and set on extended desktop moded
+
 ====================
 Instruction:
 
@@ -20,8 +21,9 @@ comment out video-stream, HUD and pilot, and then add:
 , "hud-oculus" // HUD more suitable for oculus view - recommend to turn it off- 
 * You can switch between oculus view and non oculus view by simply commenting out the plugin name 
 
-3. set your oculus to extended desktop mode, 
-4. Go to http://localhost:3000/ , to put your browser on the oculus screen, make sure it is horizonally correct, press f11 on your browser to enjoy an oculus view of drone's camera. 
+3. Go to http://localhost:3000/ 
+4. Put your browser on the oculus screen, make sure it is horizonally correct
+5. Press f11 to go full screen and enjoy an oculus view of drone's camera. 
  
 ======================
 
