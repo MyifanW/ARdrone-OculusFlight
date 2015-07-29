@@ -2,7 +2,7 @@
 	    var Video = function Video(cockpit) {
 			var $video1, $video2, $videoBuffer, dronestream, processFrame, video1, video1Ctx, video2, video2Ctx, videoBuffer, _RATIO;
 			_RATIO = 0.5;
-            console.log("Initializing video stream plugin.");
+            console.log("Initializing Oculus video stream plugin.");
             var video = this;
             
             // Add some UI elements
@@ -20,7 +20,6 @@
 			video1Ctx = video1.getContext('2d');
 			video2 = $video2[0];
 			video2Ctx = video2.getContext('2d');
-			//$("#oculus-stream").css("display", "none");
 			processFrame = function() {
 				requestAnimationFrame(processFrame);
 				video1.width = video1.width;

@@ -1,0 +1,53 @@
+#dronestream {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+#dronestream canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#oculus-stream {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.oculus-eye {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: black !important;
+  overflow: hidden;
+}
+
+#oculus-left {
+  text-align: left;
+  left: 0;
+}
+
+#oculus-right {
+  text-align: right;
+  right: 0;
+}
+
+#oculus-stream-left {
+  margin-right: -100px !important;
+}
+
+#oculus-stream-right {
+  margin-left: -100px !important;
+}
+
+#oculus-stream-left, #oculus-stream-right {
+  margin-top: 30%;
+  height: 50%;
+}
